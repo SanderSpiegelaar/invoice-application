@@ -28,9 +28,9 @@ export const systemLogs = createLogger({
         exceptionHandlers: [
         new transports.File({ filename: "logs/exceptions.log" })
         ],
-        RejectionHandlers: [
-            new transports.File({ filename: "logs/rejections.log" })
-    ],
+        //RejectionHandlers: [
+         //   new transports.File({ filename: "logs/rejections.log" })
+    //],
 });
 
 export const morganMiddleware = morgan(
